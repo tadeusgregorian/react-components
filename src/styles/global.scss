@@ -1,0 +1,205 @@
+html, body {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.offset {
+    margin: 0 -12px;
+    > * {
+        margin: 12px;
+    }
+}
+
+.padding-right {
+    padding-right: 12px;
+}
+
+.padding-right-double {
+	padding-right: 24px;
+}
+
+.padding-left {
+    padding-left: 12px;
+}
+
+.padding-left-double {
+	padding-left: 24px;
+}
+
+.padding-top {
+    padding-top: 12px;
+}
+
+.padding-top-double {
+	padding-top: 24px;
+}
+
+.padding-bottom {
+    padding-bottom: 12px;
+}
+
+.padding-bottom-double {
+	padding-bottom: 24px;
+}
+
+.padding {
+    padding: 12px;
+}
+
+.margin-left {
+	margin-left: 12px;
+}
+
+.margin-right {
+	margin-right: 12px;
+}
+
+.margin-top {
+	margin-top: 12px;
+}
+
+.margin-bottom {
+	margin-bottom: 12px;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+
+@mixin noSelect() {
+	user-select: none;
+}
+
+
+.user-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+fb, fb {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.no-shrink {
+    flex-shrink: 0;
+}
+
+.no-grow {
+    flex-grow: 0;
+}
+
+.shrink {
+    flex-shrink: 1;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.left {
+    margin-right: auto;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.horizontal {
+	flex-direction: row;
+}
+
+.vertical {
+	flex-direction: column;;
+}
+
+.height100 {
+  height: 100%;
+}
+
+right {
+	justify-content: flex-end;
+}
+
+left {
+	justify-content: flex-start;
+}
+
+center {
+	justify-content: center;
+}
+
+.center{
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+left, right, center {
+	flex-direction: row;
+	display: flex;
+	align-items: center;
+	flex: 1 0 auto;
+}
+
+
+.offset {
+	&.only-horizontal {
+		> * {
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+	}
+	&.slim {
+		margin: 0 -3px;
+		> * {
+			margin: 3px;
+		}
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.textCenter {
+	text-align: center;
+}
+
+._1-of-3 {
+	flex-basis: 33.3333333%;
+}
+
+._1-of-2 {
+	flex-basis: 50%;
+}
+
+.a-center {
+	align-items: center;
+}
+
+.a-end {
+	align-items: flex-end;
+}
+
+.j-end {
+	justify-content: flex-end;
+}
+
+.j-center {
+	justify-content: center;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.overflowY {
+	overflow-y: auto;
+}

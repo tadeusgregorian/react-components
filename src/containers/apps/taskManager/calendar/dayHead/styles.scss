@@ -1,0 +1,158 @@
+
+.daysWrapper {
+	> .head {
+		flex: 0 0 auto;
+		padding: 6px 2px;
+		color: #656464;
+		text-transform: capitalize;
+		position: relative;
+		font-size: 26px;
+		padding-bottom: 0;
+		font-weight: lighter;
+		justify-content: flex-start;
+		align-items: center;
+
+		.date {
+			font-weight: 200;
+	    font-size: 29px;
+	    margin-left: 2px;
+	    text-shadow: 1px 1px rgba(255, 255, 255, 0.41);
+	    text-align: center;
+	    height: 40px;
+	    align-items: center;
+	    color: #424242;
+		}
+
+		.addNewTaskButton{
+			flex: 0 0 auto;
+    	margin-right: 17px;
+		}
+
+		.futurePastIndicator{
+			width: 154px;
+			height: 17px;
+			margin-right: 15px;
+			background-image: url('./zukunft2.png');
+			background-size: 140px auto;
+			flex: 0 0 auto;
+			align-self: center;
+			background-repeat: no-repeat;
+		}
+
+		.todayPrefix {
+			font-weight: bold;
+			flex: 0 0 auto;
+			margin-right: 4px;
+			padding: 0 4px 0 6px;
+			border-radius: 2px;
+			font-weight: 900;
+			font-size: 23px;
+			letter-spacing: 2.9px;
+			text-transform: none;
+		}
+	}
+
+	&.inUserMode {
+		> .head {
+			padding: 6px 12px 12px 47px;
+		}
+	}
+
+	&.isToday {
+		> .head {
+			flex-direction: row;
+
+			.todayPrefix {
+				font-size: 26px;
+				margin-right: 6px;
+				padding-left: 0;
+			}
+		}
+	}
+
+	.addTaskButton{
+		background: #f6f7f9;
+    border-radius: 4px;
+    color: #65686d;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #ced0d4;
+    border-bottom: 1px solid #bec1c7;
+    border-top: 1px solid #dfe0e2;
+    height: 40px;
+    flex: 0 0 auto;
+    width: 39px;
+    margin-right: 9px;
+
+		.addTaskButtonIconWrapper{
+			flex: 1 0 auto;
+	    justify-content: center;
+	    margin: 3px 0;
+
+			.icon{
+				border: none;
+				font-size: 16px;
+				justify-content: center;
+				align-items: center;
+				padding: 0px;
+				margin: 4px;
+				color: #3eb16f;
+			}
+		}
+
+		.addTaskButtonText{
+			justify-content: center;
+			align-items: center;
+			font-size: 15px;
+    	font-weight: 700;
+		}
+	}
+
+	.dayControl {
+		border-radius: 2px;
+		margin-right: 20px;
+
+		> * {
+			box-sizing: border-box;
+			height: 40px;
+			font-size: 15px;
+			align-items: center;
+			justify-content: center;
+			align-items: center;
+			padding: 0px;
+			color: #555555;
+			margin-bottom: 0px;
+			border-radius: 0px;
+			background-color: rgba(214, 214, 214, 0.64);
+			cursor: pointer;
+
+			&:active{
+				background-color: lightgrey;
+			}
+
+			&:hover{
+				background-color: grey;
+				color: white;
+				icon{
+					color: white;
+				}
+			}
+		}
+
+		.jumpToTodayButton{
+	    width: 89px;
+			border:none;
+		}
+
+		.jumpToDateIcon{
+			width: 44px;
+			border:none;
+		}
+
+		flex: 0 0 auto;
+		span {
+			padding: 0!important;
+		}
+	}
+
+}

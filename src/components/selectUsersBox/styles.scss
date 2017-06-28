@@ -1,0 +1,36 @@
+.selectUsersBoxMain{
+  flex: 0 1 auto;
+  width: auto;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  width: 649px;
+
+  .userElement{
+    height: 34px;
+    margin: 4px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    width: 208px;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #353535;
+    border-color: grey;
+    box-sizing: border-box;
+
+    &.isDisabled{
+      color: grey;
+      background-color: lightgrey;
+      border-color: lightgrey;
+    }
+
+    &.selected{
+      box-sizing: border-box;
+      border: 2px solid #2ecc71;
+      color: #2ecc71;
+      font-weight: 400;
+      background-color: #f2fff7;
+    }
+  }
+}

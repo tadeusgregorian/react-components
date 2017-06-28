@@ -1,0 +1,25 @@
+.qmAssignUsersStep{
+  margin-top: 8px;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+	padding-bottom: 6px;
+  width: 100%;
+
+  .chipbarWrapper{
+    width: 650px;
+
+    &.chipBarBranches{
+      border-bottom: 1px solid #efefef;
+    }
+  }
+
+  .selectUsersBox{
+    margin-top: 8px;
+  }
+
+	.selected {
+		color: white;
+		font-weight: 300;
+	}
+}

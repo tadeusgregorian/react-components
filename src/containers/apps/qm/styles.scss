@@ -1,0 +1,94 @@
+.qmAppWrapper{
+	justify-content: center;
+	height: 100%;
+
+	.qmAppMain {
+		max-width: 990px;
+
+		.qmHead{
+			flex-direction: row;
+			padding-top: 0px;
+			justify-content: flex-start;
+			font-weight: 400;
+    	color: #5a5a5a;
+
+			.searchWrapper{
+				flex: 0 0 auto;
+				width: 200px;
+
+				icon{
+					font-size: 22px;
+					margin: 2px;
+					padding: 2px;
+					align-items: flex-end;
+					padding-bottom: 11px;
+					color: grey;
+				}
+			}
+
+			.unreadCheckbox{
+				flex: 0 0 auto;
+				justify-content: flex-start;
+				align-items: flex-end;
+				padding-bottom: 8px;
+    		margin-left: 30px;
+			}
+
+			.adminEyeCheckbox{
+				flex: 0 0 auto;
+				justify-content: flex-start;
+				align-items: flex-end;
+				padding-bottom: 8px;
+				margin-left: 30px;
+
+				.adminEyeInfo{
+					padding-bottom: 3px;
+		    	padding-left: 4px;
+
+					.icon{
+						font-size: 16px;
+					}
+				}
+			}
+
+			.addQmButton{
+				flex: 0 0 auto;
+				height: 44px;
+		    background: #f6f7f9;
+		    margin-top: 16px;
+				margin-left: auto;
+		    width: 172px;
+		    border-radius: 4px;
+				color: #65686d;
+				font-weight: bold;
+				cursor: pointer;
+				border: 1px solid #ced0d4;
+				border-bottom: 1px solid #bec1c7;
+    		border-top: 1px solid #dfe0e2;
+
+				.addQmButtonIconWrapper{
+					width: 34px;
+			    flex: 0 0 auto;
+			    justify-content: center;
+			    border-right: 1px solid #d7d7d8;
+			    margin: 3px 0;
+
+					.icon{
+						border: none;
+						font-size: 16px;
+						justify-content: center;
+						align-items: center;
+						padding: 0px;
+						margin: 4px;
+						color: #3eb16f;
+					}
+				}
+
+				.addQmButtonText{
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+	}
+}
